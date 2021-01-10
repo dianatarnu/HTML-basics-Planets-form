@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><strong>Planets</strong></h1>
+    <table cellspacing = "2" cellpadding = "4" border="1" >
+        <tr>
+            <td colspan="2"></td>
+            <td>Name</td>
+            <td>Mass (1024kg)</td>
+            <td>Diameter (km)</td>
+        </tr>
+        <tr>
+            <td rowspan="4" colspan="2" align="center">Terrestrial planets</td>
+            <td>Mercury</td>
+            <td>0.33</td>
+            <td>4,879</td>
+        </tr>
+        <tr>
+            <td>Venus</td>
+            <td>4.87</td>
+            <td>12,104</td>
+        </tr>
+        <tr>
+            <td>Earth</td>
+            <td>5.97</td>
+            <td>12,756</td>
+        </tr>
+        <tr>
+            <td>Mars</td>
+            <td>0.642</td>
+            <td>6,792</td>
+        </tr>
+
+        <tr>
+            <td rowspan="4">Jovian planets</td>
+            <td rowspan="2">Gas giants</td>
+            <td>Jupiter</td>  
+            <td>1898</td>
+            <td>142,984</td>
+        </tr>    
+        <tr>
+            <td>Saturn</td>
+            <td>568</td>
+            <td>120,536</td>
+        </tr>            
+        <tr>
+            <td rowspan="2">Ice giants</td>
+            <td>Uranus</td>
+            <td>86.8</td>
+            <td>51,118</td>
+        </tr>    
+        <tr>
+            <td>Neptune</td>
+            <td>102</td>
+            <td>49,528</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Dwarf planets</td>
+            <td>Pluto</td>
+            <td>0.0146</td>
+            <td>2,370</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <form action="index.html?name=Paul+Negoescu&email=paul.negoescu%40iquestgroup.com&planet=saturn&agree=on">
+        <fieldset>
+            <legend>Ask us about planets</legend>
+            <br>
+            <label>Full name: <input type="text" name="name" required/></label>
+            <br>
+            <br>
+            <label>Email: <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/></label>
+            <br>
+            <br>
+            <label>Favorite planet:</label>
+            <br>
+            <br>
+            <label><input type="radio" name="planet" value="Mercury"/>Mercury</label><br>
+            <label><input type="radio" name="planet" value="Venus"/>Venus</label><br>
+            <label><input type="radio" name="planet" value="Earth" checked="checked"/>Earth</label><br>
+            <label><input type="radio" name="planet" value="Mars"/>Mars</label><br>
+            <label><input type="radio" name="planet" value="Jupiter"/>Jupiter</label><br>
+            <label><input type="radio" name="planet" value="Saturn"/>Saturn</label><br>
+            <label><input type="radio" name="planet" value="Uranus"/>Uranus</label><br>
+            <label><input type="radio" name="planet" value="Neptune"/>Neptune</label><br>
+            <label><input type="radio" name="planet" value="Pluto"/>Pluto</label><br>
+            <br>
+            <label><input type="checkbox" name="terms" required>I agree to the <a href="https://university.iquestgroup.com/mod/assign/view.php?id=306">terms and conditions</a></label>
+            <br>
+            <br>
+            <input type="reset" value="Reset Form" />
+            <input type="submit" value="Ask anyway" />
+        </fieldset>
+    </form>
+</body>
+</html>
